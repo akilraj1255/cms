@@ -14,6 +14,11 @@ gem 'rack-protection' # Protects against sessions attacks
 gem 'rack-timeout' # Limits web request time
 gem 'secure_headers' # Adds security headers to requests
 
+# API
+gem 'grape-entity' # API model rendering
+gem 'grape-swagger-entity' # API docs generator
+gem 'grape-swagger-rails' # API docs viewer
+
 # Authentication and authorization
 gem 'devise_invitable' # Inviting of users
 gem 'devise_zxcvbn' # Strong passwords for users
