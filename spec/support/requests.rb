@@ -27,6 +27,7 @@ RSpec.shared_context 'requests' do
   def request_page(expected_status: 200)
     login_as user if defined? user
     host! request_host
+    https!
     send(request_method, request_path, headers: request_headers, params: request_params)
     expect(response).to have_http_status expected_status
   end
